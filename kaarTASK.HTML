@@ -1,0 +1,386 @@
+<!--Responsive Hero Image with CSS Text + Button + popup Full-Width. If you like my work, please credit author: www.action360.ca @action360ca Enjoy!-->
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700,800" rel="stylesheet">
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+<style>
+    body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  font-family: Georgia;
+  font-weight: bold;
+  font-style: italic;
+  margin: 10px;
+  text-shadow: 2px 2px #000;
+}
+
+p {
+  font-family: Georgia;
+  font-style: italic;
+  text-shadow: 1px 1px #000;
+}
+
+.exclusions {
+  font-family: Georgia;
+  font-size: 8pt;
+  letter-spacing: 1px;
+  text-shadow: none;
+  font-style: normal;
+}
+
+.hero-image {
+  background-image: url("https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683_960_720.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-exclusions {
+  position: fixed;
+  text-align: center;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 12px 35px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  border: 5px solid black;
+  margin-left: -1px;
+  margin-top: 5%;
+  font-size: 8pt;
+  letter-spacing: 5px;
+  font-weight: bold;
+  font-family: Geogia;
+  font-syle: italic;
+}
+
+.hero-text button:hover {
+  background-color: transparent;
+  color: white;
+  border: 5px solid black;
+  text-shadow: 2px 2px #000;
+}
+
+/*start of popup*/
+.exclusions {
+  font-family: Georgia;
+  font-size: 8pt;
+  letter-spacing: 1px;
+  text-shadow: none;
+  font-style: normal;
+}
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+/*.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}*/
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 2px;
+  width: 60%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Georgia, sans-serif;
+  font-style: italic;
+}
+
+.popup .close {
+  position: fixed;
+  top: 90px;
+  left: 50%;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #a6a6a6;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 700px) {
+  .box {
+    width: 70%;
+  }
+  .popup {
+    width: 70%;
+  }
+}
+
+/* unvisited link */
+a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #fff;
+}
+
+/* mouse over link */
+a:hover {
+  color: #ccc;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: #fff;
+}
+.main-content{
+  padding:15px 15px;
+  
+}
+.center{
+  display:flex;
+flex-direction:row;
+  justify-content: space-around;
+
+  
+}
+.center1{
+display:block;
+  position:relative;
+
+  
+}
+.hello{
+  display:block;
+  padding:50px 10px;
+  border: 1px solid red;
+    background: aliceblue;
+  width:200px;
+  height:300px;
+}
+p{
+  display:block;
+}
+.align{
+  width:150px;
+}
+.img{
+  width:200px;
+  height:150px;
+  
+  padding:0px 20px;
+}
+.container{
+  display:flex;
+position:relative;  
+left:100px;
+  top:50px;
+}
+
+.img-size{
+  width:200px;
+  height: 200px;
+}
+.gradient{
+    height: 300px;
+
+}
+
+.gradient{
+background-image: linear-gradient( 135deg, #F97794 10%, #623AA2 100%);
+}
+.text{
+    padding: 50px;
+    width: 550px;
+}
+
+.img-1{
+  width:100px;
+  position:relative;
+  left:20px;
+  padding-bottom:10px;
+}
+
+.img-2{
+  width:100px;
+  position:relative;
+  left:30px;
+  padding-bottom:20px;
+}
+
+input#name {
+    width: 450px;
+}
+
+input#email {
+   width: 450px;
+}
+textarea#message {
+   width: 450px;
+}
+
+
+</style>
+</head>
+
+<body>
+<div class="hero-image" style="height: 100%;">
+  <div class="hero-text">
+    <h1 style="font-style: Georgia; color: #fff; font-size:50px;">3R RECYCLE</h1>
+    <p>RECYCLE,REUSE,REDUCE</p>
+  
+  </div>
+  <div class="hero-exclusions">
+    <a href="#popup1">
+      <p class="exclusions">*click here for details</p>
+    </a>
+  </div>
+
+  <div id="popup1" class="overlay">
+    <div class="popup">
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        <br><br>
+        <h2>We have to do something to reduce reuse and recycle</h2>
+        This is a list of ideas
+        reduce plastics and so on
+        <br><br><br>
+      </div>
+    </div>
+  </div>
+  <!--lightbox style popup goes here-->
+</div>
+<div class="main-content">
+  
+  <div class="center">
+    <div class="hello">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Recycling_symbol.svg/613px-Recycling_symbol.svg.png" alt="vinith" class="img-1">
+      <p class="align"> Recycling is the process of converting waste materials into new materials and objects. </p>
+    </div>
+    <div class="hello">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Reuse-reduce-recycle.png" alt="vinith" class="img-2">
+      <p class="align">recycle is  to use again especially in a different way or after reclaiming </p>
+    </div>
+    <div class="hello">
+    <img src="https://financenancy.com/wp-content/uploads/2017/01/garbage-environment.jpg" alt="Srinivasan" class="img">
+      <p class="align"> Reduce is the reducing the use of  waste materials</p>
+    </div>
+  </div>
+</div>
+
+<div class="center1">
+  <div class="gradient">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="container">
+ <img src="srinni.png" class="img-size">
+      </div>
+    </div>
+       <div class="col-sm-6">
+         
+      <div class="text">  I am Srinivasan. J and currently pursuing Bachelour of Engineering in Computer Science and Engineering and I am having a CGPA of 8.4. I have a lot of interest in doing social activities such as LEO club and Geo Club. In geo club, we make sure that plant saplings will doing for every month once. </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="center1">
+  <center> Contact Form </center>
+           <form class="form-horizontal" role="form" id="contactForm">
+                  <div class="form-group">
+                    <label for="name" class="col-sm-2 control-label">Name</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control required" id="name" name="name" placeholder="First & Last Name" value="" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control required" id="email" name="email" placeholder="example@domain.com" value="" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="message" class="col-sm-2 control-label">Message</label>
+                    <div class="col-sm-10">
+                      <textarea class="form-control" rows="4" id="message" name="message" required></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-10 col-sm-offset-2">
+                      <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+                    </div>
+                  </div>
+                </form>
+  
+</div>
+</body>
+</html>
